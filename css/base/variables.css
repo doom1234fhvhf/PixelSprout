@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+  --green-500: #3ddc97;
+  --green-700: #1fa774;
+  --accent: #7ee787;
+
+  --dark-900: #0e1116;
+  --dark-800: #161b22;
+  --dark-700: #1f2933;
+
+  --gray-200: #c9d1d9;
+  --gray-400: #8b949e;
+
+  --white: #ffffff;
+
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Layout */
+  --max-width: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+}

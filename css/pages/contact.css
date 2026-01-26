@@ -1,0 +1,5 @@
+.contact-page form {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}

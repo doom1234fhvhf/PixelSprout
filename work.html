@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View featured projects created by PixelSprout.">
+  <title>Our Work | PixelSprout</title>
+
+  <!-- Base -->
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+
+  <!-- Layout -->
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/sections.css">
+  <link rel="stylesheet" href="css/layout/grid.css">
+  <link rel="stylesheet" href="css/layout/footer.css">
+
+  <!-- Components -->
+  <link rel="stylesheet" href="css/components/cards.css">
+  <link rel="stylesheet" href="css/components/buttons.css">
+  <link rel="stylesheet" href="css/components/animations.css">
+  <link rel="stylesheet" href="css/components/modal.css">
+
+  <!-- Page -->
+  <link rel="stylesheet" href="css/pages/work.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <div class="logo">PixelSprout</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container fade-up">
+    <h1>Our Work</h1>
+    <p>
+      A selection of original projects created to demonstrate
+      design thinking, technical skill, and creativity.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid grid-3">
+
+    <article class="work-card card fade-up">
+      <h3>PixelSprout Website</h3>
+      <p>
+        A fully responsive, multi-page website built from scratch
+        using HTML, CSS, and JavaScript.
+      </p>
+      <button class="btn small open-modal" data-modal="project1">
+        View Details
+      </button>
+    </article>
+
+    <article class="work-card card fade-up">
+      <h3>Brand Identity System</h3>
+      <p>
+        A complete brand kit including logo design,
+        color palette, and typography rules.
+      </p>
+      <button class="btn small open-modal" data-modal="project2">
+        View Details
+      </button>
+    </article>
+
+    <article class="work-card card fade-up">
+      <h3>UI Concept Designs</h3>
+      <p>
+        Original interface concepts focused on accessibility
+        and user experience.
+      </p>
+      <button class="btn small open-modal" data-modal="project3">
+        View Details
+      </button>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 PixelSprout. All rights reserved.</p>
+</footer>
+
+<!-- MODALS -->
+<section class="modal-overlay" id="project1">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <h2>PixelSprout Website</h2>
+    <p>
+      This project demonstrates clean architecture, modular CSS,
+      JavaScript-driven interactivity, and accessibility-first design.
+    </p>
+  </div>
+</section>
+
+<section class="modal-overlay" id="project2">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <h2>Brand Identity System</h2>
+    <p>
+      Includes logo sketches, finalized marks, color systems,
+      and typography guidelines developed by students.
+    </p>
+  </div>
+</section>
+
+<section class="modal-overlay" id="project3">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <h2>UI Concept Designs</h2>
+    <p>
+      Focused on layout clarity, color contrast, and intuitive navigation.
+    </p>
+  </div>
+</section>
+
+<script src="js/core/app.js"></script>
+<script src="js/core/nav.js"></script>
+<script src="js/components/modal.js"></script>
+<script src="js/utils/observer.js"></script>
+
+</body>
+</html>

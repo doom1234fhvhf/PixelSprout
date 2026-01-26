@@ -1,0 +1,19 @@
+section {
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.hero {
+  height: 80vh;
+  min-height: 560px;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}

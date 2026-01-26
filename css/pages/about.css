@@ -1,0 +1,26 @@
+.about-hero {
+  background: linear-gradient(
+    135deg,
+    var(--dark-800),
+    var(--dark-900)
+  );
+}
+
+.about-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.about-content p {
+  max-width: 70ch;
+}
+
+.values {
+  margin-top: 3rem;
+}
+
+.value-card {
+  background: var(--dark-800);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+}
