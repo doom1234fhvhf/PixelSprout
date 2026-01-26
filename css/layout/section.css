@@ -17,3 +17,18 @@ section {
   top: 30px;
   left: 30px;
 }
+
+.page-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1e1e; /* Darker section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.page-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 40px;
+}
