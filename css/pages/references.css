@@ -1,0 +1,73 @@
+/* ===============================
+   REFERENCES PAGE
+================================ */
+
+.references-content {
+  display: grid;
+  gap: 3rem;
+}
+
+/* Individual reference blocks */
+.ref-block {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.ref-block h2 {
+  margin-bottom: 0.8rem;
+}
+
+.ref-block ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.ref-block li {
+  margin-bottom: 0.5rem;
+  color: #cfd6dd;
+}
+
+/* Documentation section */
+.documentation h2 {
+  margin-bottom: 1rem;
+}
+
+.documentation p {
+  color: #cfd6dd;
+  max-width: 700px;
+}
+
+/* PDF links */
+.doc-links {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.doc-links li {
+  margin-bottom: 1rem;
+}
+
+.doc-links a {
+  display: inline-block;
+  padding: 0.9rem 1.3rem;
+  border-radius: 10px;
+  background: rgba(138, 255, 179, 0.12);
+  color: #8affb3;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.doc-links a:hover {
+  background: rgba(138, 255, 179, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Small note */
+.note {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-top: 2rem;
+}
