@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Digital products created by PixelSprout.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digital products created by PixelSprout." />
   <title>Products | PixelSprout</title>
 
   <!-- Base -->
-  <link rel="stylesheet" href="css/base/reset.css">
-  <link rel="stylesheet" href="css/base/variables.css">
-  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
 
   <!-- Layout -->
-  <link rel="stylesheet" href="css/layout/header.css">
-  <link rel="stylesheet" href="css/layout/sections.css">
-  <link rel="stylesheet" href="css/layout/grid.css">
-  <link rel="stylesheet" href="css/layout/footer.css">
+  <link rel="stylesheet" href="css/layout/header.css" />
+  <link rel="stylesheet" href="css/layout/sections.css" />
+  <link rel="stylesheet" href="css/layout/grid.css" />
+  <link rel="stylesheet" href="css/layout/footer.css" />
 
   <!-- Components -->
-  <link rel="stylesheet" href="css/components/cards.css">
-  <link rel="stylesheet" href="css/components/buttons.css">
-  <link rel="stylesheet" href="css/components/animations.css">
-  <link rel="stylesheet" href="css/components/modal.css">
+  <link rel="stylesheet" href="css/components/cards.css" />
+  <link rel="stylesheet" href="css/components/buttons.css" />
+  <link rel="stylesheet" href="css/components/animations.css" />
+  <link rel="stylesheet" href="css/components/modal.css" />
 
   <!-- Page -->
-  <link rel="stylesheet" href="css/pages/products.css">
+  <link rel="stylesheet" href="css/pages/products.css" />
 </head>
 
 <body>
@@ -46,6 +46,7 @@
 
 <main>
 
+<!-- HERO -->
 <section class="page-hero">
   <div class="container fade-up">
     <h1>Our Products</h1>
@@ -56,39 +57,87 @@
   </div>
 </section>
 
-<section>
+<!-- PRODUCT CARDS (TOP) -->
+<section class="products-overview">
   <div class="container grid grid-3">
 
-    <article class="product-card card fade-up">
+    <article class="product-card fade-up">
       <h3>Starter Website Kit</h3>
-      <p>
-        A basic HTML/CSS starter structure for new developers.
-      </p>
-      <button class="btn small open-modal" data-modal="product1">
+      <p>A clean HTML/CSS starter for beginners.</p>
+      <a href="#details" class="btn small">View Details</a>
         Learn More
       </button>
     </article>
 
-    <article class="product-card card fade-up">
+    <article class="product-card fade-up">
       <h3>Design System Guide</h3>
-      <p>
-        A structured guide explaining color systems,
-        spacing, and typography.
-      </p>
-      <button class="btn small open-modal" data-modal="product2">
+      <p>Rules for color, spacing, and typography.</p>
+      <a href="#details" class="btn small">View Details</a>
         Learn More
       </button>
     </article>
 
-    <article class="product-card card fade-up">
+    <article class="product-card fade-up">
       <h3>UI Component Library</h3>
-      <p>
-        A collection of reusable buttons, cards,
-        and layout components.
-      </p>
-      <button class="btn small open-modal" data-modal="product3">
+      <p>Reusable components for fast layouts.</p>
+      <a href="#details" class="btn small">View Details</a>
         Learn More
       </button>
+    </article>
+
+  </div>
+</section>
+
+<!-- PRODUCT DETAILS (BOTTOM) -->
+<section class="product-details" id = "details">
+  <div class="container">
+
+    <article class="product-detail-card fade-up">
+      <img src="assets/images/work/work1.jpg" alt="Starter Website Kit preview">
+      <div class="product-detail-info">
+        <h2>Starter Website Kit</h2>
+        <p>
+          Designed for beginners, this kit includes organized folders,
+          clean HTML templates, and reusable CSS patterns.
+        </p>
+        <ul class="product-tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Beginner</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="product-detail-card fade-up">
+      <img src="assets/images/work/work2.jpg" alt="Design System Guide preview">
+      <div class="product-detail-info">
+        <h2>Design System Guide</h2>
+        <p>
+          Explains how consistent visual rules improve usability,
+          accessibility, and brand identity.
+        </p>
+        <ul class="product-tags">
+          <li>Design</li>
+          <li>Typography</li>
+          <li>Accessibility</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="product-detail-card fade-up">
+      <img src="assets/images/work/work3.jpg" alt="UI Component Library preview">
+      <div class="product-detail-info">
+        <h2>UI Component Library</h2>
+        <p>
+          A modular set of components designed to speed up development
+          while maintaining consistency.
+        </p>
+        <ul class="product-tags">
+          <li>UI</li>
+          <li>Components</li>
+          <li>Reusable</li>
+        </ul>
+      </div>
     </article>
 
   </div>
@@ -96,43 +145,10 @@
 
 </main>
 
+
 <footer class="site-footer">
   <p>© 2026 PixelSprout. All rights reserved.</p>
 </footer>
-
-<!-- PRODUCT MODALS -->
-<section class="modal-overlay" id="product1">
-  <div class="modal">
-    <button class="modal-close">&times;</button>
-    <h2>Starter Website Kit</h2>
-    <p>
-      Designed for beginners, this kit includes organized folders,
-      clean HTML templates, and reusable CSS patterns.
-    </p>
-  </div>
-</section>
-
-<section class="modal-overlay" id="product2">
-  <div class="modal">
-    <button class="modal-close">&times;</button>
-    <h2>Design System Guide</h2>
-    <p>
-      Explains how consistent visual rules improve usability,
-      accessibility, and brand identity.
-    </p>
-  </div>
-</section>
-
-<section class="modal-overlay" id="product3">
-  <div class="modal">
-    <button class="modal-close">&times;</button>
-    <h2>UI Component Library</h2>
-    <p>
-      A modular set of components designed to speed up development
-      while maintaining consistency.
-    </p>
-  </div>
-</section>
 
 <script src="js/core/app.js"></script>
 <script src="js/core/nav.js"></script>

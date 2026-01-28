@@ -3,3 +3,171 @@
   display: grid;
   gap: 1rem;
 }
+
+/* PAGE LAYOUT */
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1rem;
+  background:
+    radial-gradient(circle at top left, rgba(138,255,179,0.08), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(120,160,255,0.08), transparent 40%);
+}
+
+/* CARD */
+.contact-card {
+  width: 100%;
+  max-width: 760px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 24px;
+  padding: 3rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.35);
+}
+
+/* HEADER */
+.contact-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-header h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  color: #cfd6dd;
+}
+
+/* FORM */
+.contact-form {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+label {
+  font-size: 0.85rem;
+  color: #aab2bb;
+}
+
+input,
+textarea {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8affb3;
+}
+
+/* BUTTON */
+.btn.full {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* SUCCESS MESSAGE */
+.form-success {
+  display: none;
+  text-align: center;
+  color: #8affb3;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* INFO */
+.contact-info {
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 2rem;
+}
+
+.contact-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  color: #cfd6dd;
+  font-size: 0.85rem;
+}
+
+/* FOOTER FIX */
+.site-footer {
+  margin-top: auto;
+}
+
+/* =========================
+   MESSAGE FEED
+========================= */
+
+.message-feed {
+  margin-top: 2.5rem;
+}
+
+.message-feed h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Message list */
+.messages {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Empty state */
+.empty-state {
+  color: #9aa3ab;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+}
+
+/* Message card */
+.message-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.2rem;
+  animation: fadeUp 0.35s ease;
+}
+
+.message-card h4 {
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+}
+
+.message-card span {
+  font-size: 0.7rem;
+  color: #9aa3ab;
+}
+
+.message-card p {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #d7dde3;
+  line-height: 1.45;
+}

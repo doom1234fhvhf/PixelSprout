@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact PixelSprout for inquiries and project information.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact PixelSprout for inquiries and project information." />
   <title>Contact | PixelSprout</title>
 
   <!-- Base -->
-  <link rel="stylesheet" href="css/base/reset.css">
-  <link rel="stylesheet" href="css/base/variables.css">
-  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
 
   <!-- Layout -->
-  <link rel="stylesheet" href="css/layout/header.css">
-  <link rel="stylesheet" href="css/layout/sections.css">
-  <link rel="stylesheet" href="css/layout/footer.css">
+  <link rel="stylesheet" href="css/layout/header.css" />
+  <link rel="stylesheet" href="css/layout/footer.css" />
 
   <!-- Components -->
-  <link rel="stylesheet" href="css/components/buttons.css">
-  <link rel="stylesheet" href="css/components/forms.css">
-  <link rel="stylesheet" href="css/components/animations.css">
+  <link rel="stylesheet" href="css/components/buttons.css" />
+  <link rel="stylesheet" href="css/components/animations.css" />
 
   <!-- Page -->
-  <link rel="stylesheet" href="css/pages/contact.css">
+  <link rel="stylesheet" href="css/pages/contact.css" />
 </head>
 
-<body>
+<body class="contact-page">
 
 <header class="site-header">
   <nav class="nav">
@@ -42,55 +40,59 @@
   </nav>
 </header>
 
-<main>
+<main class="contact-main">
 
-<section class="page-hero">
-  <div class="container fade-up">
-    <h1>Contact Us</h1>
-    <p>
-      Have a question about this project or want to learn more?
-      Reach out using the form below.
-    </p>
-  </div>
-</section>
+  <section class="contact-card fade-up">
+    <header class="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        Have a question about this project or want to learn more?
+        Reach out using the form below.
+      </p>
+    </header>
 
-<section>
-  <div class="container contact-grid">
-
-    <form class="contact-form fade-up" aria-label="Contact form">
+    <form class="contact-form" id="contactForm">
       <div class="form-group">
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" required />
       </div>
 
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" required />
       </div>
 
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <textarea id="message" rows="5" required></textarea>
       </div>
 
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
+      <button type="submit" class="btn primary full">Send Message</button>
 
-    <aside class="contact-info fade-up">
+      <p class="form-success" id="formSuccess">
+          Your message has been sent. Thanks for reaching out!
+      </p>
+    </form>
+  <section class="message-feed">
+    <h3>Submitted Messages</h3>
+
+    <div class="messages" id="messages">
+      <p class="empty-state">No messages yet. Be the first </p>
+    </div>
+  </section>
+
+    <aside class="contact-info">
       <h3>Project Info</h3>
       <p>
-        PixelSprout is a fictional creative studio developed
-        for the Technology Student Association Web Design competition.
+        PixelSprout is a fictional creative studio developed for the
+        Technology Student Association Web Design competition.
       </p>
-
       <p>
-        All content is student-created and intended
-        for educational demonstration purposes only.
+        All content is student-created and intended for educational
+        demonstration purposes only.
       </p>
     </aside>
-
-  </div>
-</section>
+  </section>
 
 </main>
 
@@ -98,8 +100,7 @@
   <p>© 2026 PixelSprout. All rights reserved.</p>
 </footer>
 
-<script src="js/core/app.js"></script>
-<script src="js/core/nav.js"></script>
+<script src="js/pages/contact.js"></script>
 <script src="js/utils/observer.js"></script>
 
 </body>
