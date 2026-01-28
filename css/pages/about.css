@@ -43,6 +43,13 @@
   line-height: 1.7;
 }
 
+.about-hero .container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+}
+
+
 /* =========================
    VALUES
 ========================= */
