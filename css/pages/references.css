@@ -1,73 +1,123 @@
 /* ===============================
-   REFERENCES PAGE
+   REFERENCES PAGE (REDESIGN)
 ================================ */
 
-.references-content {
+/* HERO */
+.references-hero {
+  padding: 6rem 0 4rem;
+  background: linear-gradient(
+    135deg,
+    var(--dark-900),
+    var(--dark-800)
+  );
+  text-align: center;
+}
+
+.references-hero p {
+  max-width: 650px;
+  margin: 1rem auto 0;
+  color: var(--text-muted);
+}
+
+/* GRID SECTION */
+.references-grid-section {
+  padding: 5rem 0;
+}
+
+.references-grid {
   display: grid;
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
 }
 
-/* Individual reference blocks */
-.ref-block {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 14px;
-  padding: 2rem;
+/* CARD */
+.reference-card {
+  background: rgba(255,255,255,0.04);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.ref-block h2 {
-  margin-bottom: 0.8rem;
+.reference-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
 }
 
-.ref-block ul {
-  list-style: disc;
-  padding-left: 1.2rem;
-}
-
-.ref-block li {
-  margin-bottom: 0.5rem;
-  color: #cfd6dd;
-}
-
-/* Documentation section */
-.documentation h2 {
+.reference-card h2 {
   margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
 
-.documentation p {
-  color: #cfd6dd;
-  max-width: 700px;
-}
-
-/* PDF links */
-.doc-links {
+.reference-card ul {
   list-style: none;
   padding: 0;
-  margin: 2rem 0;
 }
 
-.doc-links li {
+.reference-card li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.7rem;
+  color: #cfd6dd;
+}
+
+.reference-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* DOCUMENTATION STRIP */
+.documentation-strip {
+  padding: 6rem 0;
+  background: rgba(255,255,255,0.03);
+}
+
+.documentation-strip h2 {
   margin-bottom: 1rem;
 }
 
-.doc-links a {
+.doc-intro {
+  max-width: 700px;
+  color: #cfd6dd;
+  margin-bottom: 2.5rem;
+}
+
+/* BUTTONS */
+.doc-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.doc-btn {
   display: inline-block;
-  padding: 0.9rem 1.3rem;
-  border-radius: 10px;
-  background: rgba(138, 255, 179, 0.12);
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  background: rgba(138,255,179,0.15);
   color: #8affb3;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.25s ease;
 }
 
-.doc-links a:hover {
-  background: rgba(138, 255, 179, 0.25);
-  transform: translateY(-2px);
+.doc-btn:hover {
+  background: rgba(138,255,179,0.3);
+  transform: translateY(-3px);
 }
 
-/* Small note */
-.note {
+/* NOTE */
+.doc-note {
   font-size: 0.95rem;
   opacity: 0.75;
-  margin-top: 2rem;
+  max-width: 700px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .references-hero {
+    padding: 4.5rem 0 3rem;
+  }
 }
