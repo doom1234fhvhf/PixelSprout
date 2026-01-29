@@ -1,7 +1,7 @@
-/* ==============================
+/* 
    PixelSprout Core App
    Loaded on ALL pages
-============================== */
+ */
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("🌱 PixelSprout loaded");

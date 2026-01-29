@@ -1,6 +1,6 @@
-/* ==============================
+/* 
    Modal Component
-============================== */
+ */
 
 document.querySelectorAll("[data-modal-open]").forEach(btn => {
   btn.addEventListener("click", () => {

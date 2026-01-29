@@ -1,6 +1,6 @@
-/* ==============================
+/* 
    Navigation Behavior
-============================== */
+ */
 
 const header = document.querySelector(".site-header");
 

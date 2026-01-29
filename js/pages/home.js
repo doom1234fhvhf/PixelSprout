@@ -1,6 +1,6 @@
-/* ==============================
+/* 
    Home Page Scripts
-============================== */
+ */
 
 document.querySelectorAll(".feature-card").forEach(card => {
   card.addEventListener("mouseenter", () => {

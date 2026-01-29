@@ -1,6 +1,6 @@
-/* ==============================
+/* 
    Work Page Scripts
-============================== */
+ */
 
 document.querySelectorAll(".work-item").forEach(item => {
   item.addEventListener("click", () => {

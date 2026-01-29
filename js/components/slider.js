@@ -1,6 +1,6 @@
-/* ==============================
+/* 
    Simple Slider Component
-============================== */
+ */
 
 let currentSlide = 0;
 const slides = document.querySelectorAll(".testimonial");
