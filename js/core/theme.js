@@ -1,6 +1,4 @@
-/* 
-   Theme Controller (future-ready)
- */
+/* Theme Controller (future-ready)*/
 
 const themeToggle = document.querySelector("[data-theme-toggle]");
 

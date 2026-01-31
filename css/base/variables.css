@@ -13,11 +13,11 @@
 
   --white: #ffffff;
 
-  /* Typography */
+
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  /* Layout */
+
   --max-width: 1200px;
   --radius-sm: 6px;
   --radius-md: 12px;

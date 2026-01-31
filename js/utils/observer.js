@@ -1,6 +1,4 @@
-/* 
-   Intersection Observer Animations
- */
+/* Intersection Observer Animations*/
 
 const revealElements = document.querySelectorAll(".fade-up");
 

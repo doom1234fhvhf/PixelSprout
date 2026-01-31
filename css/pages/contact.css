@@ -21,7 +21,7 @@
     radial-gradient(circle at bottom right, rgba(120,160,255,0.08), transparent 40%);
 }
 
-/* CARD */
+
 .contact-card {
   width: 100%;
   max-width: 760px;
@@ -81,13 +81,13 @@ textarea:focus {
   border-color: #8affb3;
 }
 
-/* BUTTON */
+
 .btn.full {
   width: 100%;
   margin-top: 0.5rem;
 }
 
-/* SUCCESS MESSAGE */
+
 .form-success {
   display: none;
   text-align: center;
@@ -96,7 +96,7 @@ textarea:focus {
   font-size: 0.9rem;
 }
 
-/* INFO */
+
 .contact-info {
   margin-top: 2.5rem;
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -112,14 +112,12 @@ textarea:focus {
   font-size: 0.85rem;
 }
 
-/* FOOTER FIX */
+/* FOOTER*/
 .site-footer {
   margin-top: auto;
 }
 
-/* =========================
-   MESSAGE FEED
-========================= */
+
 
 .message-feed {
   margin-top: 2.5rem;
@@ -130,13 +128,13 @@ textarea:focus {
   font-size: 1.1rem;
 }
 
-/* Message list */
+
 .messages {
   display: grid;
   gap: 1rem;
 }
 
-/* Empty state */
+
 .empty-state {
   color: #9aa3ab;
   font-size: 0.85rem;
@@ -146,7 +144,7 @@ textarea:focus {
   border-radius: 14px;
 }
 
-/* Message card */
+
 .message-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);

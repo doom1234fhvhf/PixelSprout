@@ -1,6 +1,4 @@
-/* 
-   Accessibility Enhancements
- */
+/* Accessibility Enhancements*/
 
 document.addEventListener("keyup", e => {
   if (e.key === "Escape") {

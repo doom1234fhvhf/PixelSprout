@@ -13,7 +13,7 @@ form.addEventListener("submit", (e) => {
   const empty = document.querySelector(".empty-state");
   if (empty) empty.remove();
 
-  // Create message card
+  
   const card = document.createElement("div");
   card.classList.add("message-card");
 
@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
   // Reset form
   form.reset();
 
-  // Show success message
+
   success.style.display = "block";
   setTimeout(() => {
     success.style.display = "none";

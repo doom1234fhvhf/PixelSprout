@@ -1,6 +1,4 @@
-/* 
-   SERVICES PAGE — THEATER STYLE
- */
+
 
 /* HERO / STAGE */
 .services-hero {
@@ -41,9 +39,7 @@
   opacity: 0.9;
 }
 
-/* 
-   INTRO STATEMENT
- */
+/* INTRO STATEMENT*/
 
 .services-intro {
   padding: 5rem 0 2rem;
@@ -58,9 +54,7 @@
   color: #cfd6dd;
 }
 
-/* 
-   SERVICES GRID
- */
+/* SERVICES GRID*/
 
 .services-section {
   padding: 4rem 0 6rem;
@@ -85,9 +79,7 @@
   }
 }
 
-/* 
-   SERVICE CARDS
- */
+
 
 .service-card {
   background:
@@ -143,9 +135,7 @@
   line-height: 1.65;
 }
 
-/* 
-   RESPONSIVE
- */
+
 
 @media (max-width: 900px) {
   .services-hero {

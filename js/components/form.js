@@ -1,6 +1,4 @@
-/* ==============================
-   Contact Form Validation
-============================== */
+/*Contact Form Validation */
 
 const form = document.querySelector("form");
 

@@ -1,6 +1,4 @@
-/* 
-   Smooth Scroll Utility
- */
+/* Smooth Scroll Utility*/
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", e => {

@@ -1,7 +1,4 @@
-/* 
-   PixelSprout Core App
-   Loaded on ALL pages
- */
+/* PixelSprout Core App*/
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("🌱 PixelSprout loaded");
@@ -9,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   highlightActiveNav();
 });
 
-/* Highlight active nav link based on current page */
 function highlightActiveNav() {
   const links = document.querySelectorAll(".nav-links a");
   const currentPage = location.pathname.split("/").pop();
