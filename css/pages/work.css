@@ -46,14 +46,26 @@
 /* CARD */
 .work-detail-card {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 2.5rem;
-  margin-bottom: 4rem;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 18px;
-  padding: 2rem;
+  grid-template-columns: 340px 1fr;
+  gap: 3rem;
+  margin-bottom: 4.5rem;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.02)
+  );
+  border-radius: 22px;
+  padding: 2.5rem;
   align-items: center;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.35s ease, border-color 0.35s ease;
 }
+
+.work-detail-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
 
 /* IMAGE */
 .work-media {
@@ -90,12 +102,28 @@
 }
 
 .work-tags li {
-  padding: 0.45rem 0.9rem;
+  padding: 0.5rem 1rem;
   background: rgba(138, 255, 179, 0.15);
   border-radius: 999px;
   font-size: 0.75rem;
   color: #8affb3;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  user-select: none;
 }
+
+.work-tags li:hover {
+  background: rgba(138, 255, 179, 0.3);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.work-tags li:active {
+  transform: scale(0.95);
+}
+
+
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -167,6 +195,51 @@
   background: rgba(138, 255, 179, 0.15);
   color: #8affb3;
   border-radius: 999px;
+}
+
+/* TECH MODAL */
+.tech-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.tech-modal.active {
+  display: flex;
+}
+
+
+.tech-modal-content {
+  background: #11161c;
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  border: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.tech-modal-content h2 {
+  margin-bottom: 1rem;
+}
+
+.tech-modal-content p {
+  color: #cfd6dd;
+  line-height: 1.7;
+}
+
+.tech-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
 }
 
 /* Mobile */
