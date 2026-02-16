@@ -30,7 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
     js: {
       title: "JavaScript – Interactivity & Logic",
       text: "JavaScript adds dynamic behavior to websites. It powers modals, animations, event handling, and interactive UI features without requiring frameworks."
-    }
+    },
+    
+    responsive: {
+      title: "Responsive Design – Adaptive Layouts",
+      text: "Responsive design ensures a website adapts to different screen sizes and devices. Using CSS media queries, flexible grids, relative units, and scalable images, the layout adjusts for desktop, tablet, and mobile screens."
+  }
+
   };
 
   tags.forEach(tag => {
