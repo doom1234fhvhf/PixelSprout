@@ -35,7 +35,41 @@ document.addEventListener("DOMContentLoaded", function () {
     responsive: {
       title: "Responsive Design – Adaptive Layouts",
       text: "Responsive design ensures a website adapts to different screen sizes and devices. Using CSS media queries, flexible grids, relative units, and scalable images, the layout adjusts for desktop, tablet, and mobile screens."
-  }
+    },
+
+
+    branding: {
+      title: "Branding – Visual Identity Systems",
+      text: "Branding defines how a company presents itself visually and emotionally. It includes logos, color systems, voice, and consistent design standards that create recognition and trust."
+    },
+
+    design: {
+      title: "Design – Visual Communication",
+      text: "Design combines layout, hierarchy, color theory, and spacing to communicate ideas clearly. Strong design improves usability while maintaining visual appeal."
+    },
+
+    typography: {
+      title: "Typography – Structured Text Systems",
+      text: "Typography controls font selection, hierarchy, readability, and spacing. Effective typography improves clarity and strengthens brand personality."
+    },
+
+
+    ui: {
+      title: "UI – User Interface Design",
+      text: "User Interface (UI) design focuses on the visual and interactive elements users engage with. It includes layout structure, buttons, spacing, colors, and visual hierarchy to create an intuitive interface."
+    },
+
+    ux: {
+      title: "UX – User Experience Design",
+      text: "User Experience (UX) design focuses on how users feel while interacting with a product. It includes usability, navigation flow, accessibility, and overall efficiency to ensure a smooth experience."
+    },
+
+    accessibility: {
+      title: "Accessibility – Inclusive Design",
+      text: "Accessibility ensures websites are usable by people of all abilities. This includes proper color contrast, semantic HTML, keyboard navigation, alt text for images, and screen reader compatibility."
+    },
+
+
 
   };
 
